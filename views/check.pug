@@ -1,0 +1,25 @@
+extends layout
+block content
+  div
+    table.table-expand(style="width: 80%; margin: 0 auto;")
+      thead
+        tr.table-expand-row
+          th(width="200") Date
+          th Numero de Départ
+          th.text-right(width="150") Poste
+          th(width="150") Status
+      
+      tbody
+        for c in o
+         tr.table-expand-row(data-open-details="")
+            td  #{c.date}
+            td  #{c.depart} 
+            td.text-right  #{c.poste}
+            td
+                | #{c.status}  
+                span.expand-icon
+         tr.table-expand-row-content
+            td.table-expand-row-nested(colspan="8")
+                p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque unde quaerat reprehenderit ipsa ipsam, adipisci facere repellendus impedit at, quisquam dicta optio veniam quia nesciunt, inventore quod in neque magni?
+        

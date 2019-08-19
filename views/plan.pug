@@ -1,0 +1,16 @@
+extends layout.pug
+block title
+  title Plannifier une activité de maintenance
+block content
+  div
+    .login-box
+      .row.collapse.expanded
+        .small-12.medium-6.column.small-order-2.medium-order-1
+          .login-box-form-section
+            h1.login-box-title Plannifier une activité de maintenance
+            form(action='/planning', method='post')
+                input.login-box-input(type='text' name='poste' placeholder='Poste')
+                input.login-box-input(type='text' name='depart' placeholder='Départ')
+                input.login-box-input(type='text' name='date' placeholder='Date de maintenance')
+                input.login-box-input(type='password' name='password' placeholder='mot de passe')
+                input.login-box-submit-button(type='submit' value='Plannifier')

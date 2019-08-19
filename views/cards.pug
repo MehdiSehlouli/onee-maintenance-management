@@ -1,0 +1,7 @@
+extends layout
+block content
+    h1 #{side} : #{mytext}
+    if hint
+        i Hint : #{hint}
+        br
+    a(href=`${id}?side=${sidetoshow}`) Show #{sidetoshowDisplay}

@@ -1,0 +1,36 @@
+{
+    "people": [
+        {
+            "name": "Rbaibi",
+            "gender": "male",
+            "role": "Control Commande",
+            "phone": "0600000030",
+            "email": "rbaibi@onee1.ma",
+            "active": true
+        },
+        {
+            "name": "Tsouli",
+            "gender": "male",
+            "role": "Control Commande",
+            "phone": "0600000022",
+            "email": "rbaibi@onee2.ma",
+            "active": false
+        },
+        {
+            "name": "Hajoum",
+            "gender": "male",
+            "role": "Control Commande",
+            "phone": "0600000001",
+            "email": "rbaibi@onee0.ma",
+            "active": true
+        },
+        {
+            "name": "Maryem",
+            "gender": "female",
+            "role": "Control Commande",
+            "phone": "0600000001",
+            "email": "rbaibi@onee0.ma",
+            "active": false
+        }
+    ] 
+}

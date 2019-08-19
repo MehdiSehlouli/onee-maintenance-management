@@ -1,0 +1,33 @@
+extends personalstats.pug
+block title
+  title La Liste des agents
+block people
+ .add-people-header
+            h6.header-title
+            | La Liste des agents
+ for people in o
+    .row.add-people-section
+      .small-12.medium-6.columns.about-people
+        .about-people-avatar
+          if people.gender == "male"
+            img.avatar-image(src="/static/avatarmale.png" alt=`${people.name}`)
+          else
+            img.avatar-image(src="/static/avatarfemale.png" alt=`${people.name}`)
+        .about-people-author
+          p.author-name
+            | #{people.name}
+          p.author-role
+            i.fa.fa-briefcase(aria-hidden="true")
+            | #{people.role}
+          p.author-role
+            i.fa.fa-phone-square(aria-hidden="true")
+            | #{people.phone}
+          p.author-role
+            i.fa.fa-envelope-o(aria-hidden="true")
+            | #{people.email}
+        if people.active
+            button.button.success.small
+                i.fa.fa-circle(aria-hidden="true") IN
+        else
+            button.button.alert.small
+                i.fa.fa-times(aria-hidden="true") OUT

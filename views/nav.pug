@@ -1,0 +1,7 @@
+if username
+    .callout.alert-callout-subtle.success(data-closable='')
+            strong Yo!
+            |  Bonjour, #{username}
+            form(action='/goodbye', method='post')
+                    button.logoutbutton(type='submit') Se déconnecter
+    

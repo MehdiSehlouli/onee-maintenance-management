@@ -1,0 +1,19 @@
+{
+    "teams": [
+        {
+            "name": "Controle Commande",
+            "people": [1,2,"Mery"],
+            "active": true
+        },
+        {
+            "name": "Télécom",
+            "people": [3,1],
+            "active": true
+        },
+        {
+            "name": "Conduite",
+            "people": [4,2],
+            "active": true
+        }
+    ] 
+}
